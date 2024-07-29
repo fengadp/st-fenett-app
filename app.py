@@ -3,7 +3,7 @@ import os
 import streamlit as st
 #from streamlit_gsheets import GSheetsConnection
 from streamlit_pdf_viewer import pdf_viewer
-from streamlit_carousel import carousel # for python 3.10 correct [from typing_extensions import TypedDict, List, NotRequired] line 3 in st_env/Lib/site-packages/streamlit_carousel/__init__.py
+#from streamlit_carousel import carousel # for python 3.10 correct [from typing_extensions import TypedDict, List, NotRequired] line 3 in st_env/Lib/site-packages/streamlit_carousel/__init__.py
 
 hide_streamlit_style = """
             <style>
@@ -118,20 +118,20 @@ page_number = st.number_input(label='', min_value=1, label_visibility="collapsed
 with st.container(border=True):
     pdf_viewer('./documents/บทความประชุมวิชาการฉบับสมบูรณ์.pdf', pages_to_render=[page_number])
 
-st.header(':blue[บรรยากาศงานประชุมวิชาการวิศวกรรมอาหารแห่งชาติ ครั้งที่ 6]')
-image_items = []
-numOfImage = 12
-for k in range(numOfImage):
-    image_file = './photos/photo' + str(k+1) + '.jpg'
+#st.header(':blue[บรรยากาศงานประชุมวิชาการวิศวกรรมอาหารแห่งชาติ ครั้งที่ 6]')
+#image_items = []
+#numOfImage = 12
+#for k in range(numOfImage):
+#    image_file = './photos/photo' + str(k+1) + '.jpg'
     #st.write(image_file)
-    image_items.append(
-        dict(
-            title="",
-            text="",
-            img=image_file,
-        ),
-    )
-carousel(items=image_items, width=1)
+#    image_items.append(
+#        dict(
+#            title="",
+#            text="",
+#            img=image_file,
+#        ),
+#    )
+#carousel(items=image_items, width=1)
 
 #st.divider()
 
