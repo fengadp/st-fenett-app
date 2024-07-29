@@ -1,9 +1,8 @@
 import os
-#import pandas as pd
 import streamlit as st
-#from streamlit_gsheets import GSheetsConnection
 from streamlit_pdf_viewer import pdf_viewer
-#from streamlit_carousel import carousel # for python 3.10 correct [from typing_extensions import TypedDict, List, NotRequired] line 3 in st_env/Lib/site-packages/streamlit_carousel/__init__.py
+# for python 3.10 correct [from typing_extensions import TypedDict, List, NotRequired] line 3 in st_env/Lib/site-packages/streamlit_carousel/__init__.py
+#from streamlit_carousel import carousel
 
 hide_streamlit_style = """
             <style>
@@ -18,12 +17,6 @@ st.title("The 11th National Food Engineering Conference :red[_Febuary 13-14, 202
 #st.subheader('host by')
 st.title(":green[Kasetsart University Kamphaeang Saen Campus]")
 st.image('./asset/background.webp')
-
-#tabs = st.tabs(["หน้าแรก", "ลงทะเบียน", "ส่งบทความ", "ดาวน์โหลดเอกสาร", "สำหรับเจ้าหน้าที่"])
-#st.markdown("ประเทศไทยมีความอุดมสมบูรณ์ด้านทรัพยากรอาหาร มีอุตสาหกรรมแปรรูปอาหารจำนวนมาก งานวิจัย นวัตกรรม และเทคโนโลยีใหม่ ๆ ในด้านวิศวกรรมอาหารจะช่วยส่งเสริมให้เกิดการพัฒนาอุตสาหกรรมอาหารของประเทศเพื่อก้าวเข้าสู่ยุคอุตสาหกรรม 4.0 ซึ่งต้องมีระบบการผลิตที่ใช้ทรัพยากรอย่างคุ้มค่า ประหยัดเวลาใช้แรงงานน้อยลง และเป็นกระบวนการผลิตที่มีความแม่นยำและน่าเชื่อถือ ซึ่งจำเป็นต้องมีระบบการสื่อสารข้อมูล การวิเคราะห์ และการประเมินผลข้อมูลผ่านระบบไซเบอร์ที่มีประสิทธิภาพ ทำให้เกิดการผลิตสินค้าและบริการที่ตอบสนองความต้องการของผู้บริโภคที่แตกต่างกัน วิศวกรรมอาหารเป็นสาขาวิชาทางวิศวกรรมที่บูรณาการความรู้ทางวิศวกรรมและวิทยาศาสตร์ร่วมกัน เพื่อใช้ในการพัฒนาเครื่องจักรผลิตอาหาร กระบวนการผลิตอาหาร และบริหารจัดการผลิตอาหาร วิศวกรรมอาหารเป็นสาขาวิชาทางวิศวกรรมที่บูรณาการความรู้ทางวิศวกรรมและวิทยาศาสตร์ร่วมกัน เพื่อใช้ในการพัฒนาเครื่องจักรผลิตอาหาร กระบวนการผลิตอาหาร และบริหารจัดการผลิตอาหาร โดยคำนึงถึงความปลอดภัยต่อผู้บริโภค และผลกระทบต่อสิ่งแวดล้อม วิศวกรรมอาหารจึงมีบทบาทสำคัญต่อการพัฒนาอุตสาหกรรมอาหาร และช่วยให้อุตสาหกรรมอาหารไทยมีการพัฒนาอย่างเข้มแข็งต่อเนื่องและสามารถแข่งขันได้ในระดับนานาชาติ")
-#cols_1 = st.columns(2)
-#cols_1[0].image('./asset/fig4.jpg')
-#cols_1[1].image('./asset/fig6.jpg')
 
 #st.header(':blue[วัตถุประสงค์]')
 #st.markdown("1. เพื่อเป็นเวทีให้นิสิตนักศึกษาระดับอุดมศึกษา อาจารย์ นักวิจัย และนักวิชาการ จากสถาบันการศึกษา และหน่วยงานต่าง ๆ ได้มีโอกาสเผยแพร่ผลงานทางวิชาการสู่สาธารณะ")
@@ -70,7 +63,8 @@ st.markdown(":frog: ผู้นำเสนอโครงงานระดั
 st.markdown(":tiger: อาจารย์และบุคคลทั่วไปเข้าร่วมประชุม 1000 บาท")
 st.markdown(":dog: นักศึกษาเข้าร่วมประชุม 200 บาท")
 st.markdown("ชำระเงินค่าลงทะเบียนโดยการโอนเงินเข้าบัญชีธนาคารไทยพาณิชย์ จำกัด (มหาชน) สาขากำแพงแสน (มหาวิทยาลัยเกษตรศาสตร์) ชื่อบัญชี สุกัญญา วิชชุกิจ และ วันวิสาข์ ใจตรง เลขที่ 769-280259-3")
-link = '[Click เพื่อลงทะเบียน](https://forms.gle/JZ48pfoQLuLkxr6eA)'
+#link = '[Click เพื่อลงทะเบียน](https://forms.gle/JZ48pfoQLuLkxr6eA)'
+link = '[Click เพื่อลงทะเบียน](google.form1)'
 st.markdown(link, unsafe_allow_html=True)
 st.image('./asset/QR1.svg', width=200, caption="Scan เพื่อลงทะเบียน")
 
@@ -78,7 +72,8 @@ st.header(':blue[ส่งบทความ]')
 st.markdown("กำหนดส่งบทความฉบับเต็มภายใน :rainbow[วันที่ 7 กุมภาพันธ์ 2568]")
 st.markdown("การตอบรับบทความฉบับเต็มภายใน :rainbow[วันที่ 10 กุมภาพันธ์ 2568]")
 
-link = '[Click เพื่อส่งบทคัดย่อ/บทความฉบับเต็ม/ไฟล์นำเสนอภาคบรรยาย กรุณาส่งทีละไฟล์](https://forms.gle/V1Bi3LRVwn4p4ReQ9)'
+#link = '[Click เพื่อส่งบทคัดย่อ/บทความฉบับเต็ม/ไฟล์นำเสนอภาคบรรยาย กรุณาส่งทีละไฟล์](https://forms.gle/V1Bi3LRVwn4p4ReQ9)'
+link = '[Click เพื่อส่งบทคัดย่อ/บทความฉบับเต็ม/ไฟล์นำเสนอภาคบรรยาย กรุณาส่งทีละไฟล์](google.form2)'
 st.markdown(link, unsafe_allow_html=True)
 st.image('./asset/QR2.svg', width=200, caption="Scan เพื่อส่งบทความ")
 
@@ -113,12 +108,20 @@ if opt is not None:
             file_name=file,
         )
 
+st.divider()
+
 st.header(':blue[บทความประชุมวิชาการฉบับสมบูรณ์]')
 page_number = st.number_input(label='', min_value=1, label_visibility="collapsed", key='input_page_number')
 with st.container(border=True):
     pdf_viewer('./documents/บทความประชุมวิชาการฉบับสมบูรณ์.pdf', pages_to_render=[page_number])
 
-#st.header(':blue[บรรยากาศงานประชุมวิชาการวิศวกรรมอาหารแห่งชาติ ครั้งที่ 6]')
+st.header(':blue[บรรยากาศงานประชุมวิชาการวิศวกรรมอาหารแห่งชาติ ครั้งที่ 6]')
+
+with st.container(border=True):
+    image_index = st.slider(":blue[รูปภาพกิจกรรม]", 1, 12, 1,)
+    image_file = './photos/photo' + str(image_index) + '.jpg'
+    st.image(image_file)
+
 #image_items = []
 #numOfImage = 12
 #for k in range(numOfImage):
