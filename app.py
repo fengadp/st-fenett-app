@@ -75,8 +75,8 @@ st.markdown(link, unsafe_allow_html=True)
 st.image('./asset/QR1.svg', width=200, caption="Scan เพื่อลงทะเบียน")
 
 st.header(':blue[ส่งบทความ]')
-st.markdown("กำหนดส่งบทความฉบับเต็มภายใน :red[วันที่ 7 กุมภาพันธ์ 2568]")
-st.markdown("การตอบรับบทความฉบับเต็มภายใน :red[วันที่ 10 กุมภาพันธ์ 2568]")
+st.markdown("กำหนดส่งบทความฉบับเต็มภายใน :rainbow[วันที่ 7 กุมภาพันธ์ 2568]")
+st.markdown("การตอบรับบทความฉบับเต็มภายใน :rainbow[วันที่ 10 กุมภาพันธ์ 2568]")
 
 link = '[Click เพื่อส่งบทคัดย่อ/บทความฉบับเต็ม/ไฟล์นำเสนอภาคบรรยาย กรุณาส่งทีละไฟล์](https://forms.gle/V1Bi3LRVwn4p4ReQ9)'
 st.markdown(link, unsafe_allow_html=True)
