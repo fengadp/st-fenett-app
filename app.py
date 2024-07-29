@@ -5,13 +5,13 @@ import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 from streamlit_carousel import carousel # for python 3.10 correct [from typing_extensions import TypedDict, List, NotRequired] line 3 in st_env/Lib/site-packages/streamlit_carousel/__init__.py
 
-#hide_streamlit_style = """
-#            <style>
-#            [data-testid="stToolbar"] {visibility: hidden !important;}
-#            footer {visibility: hidden !important;}
-#            </style>
-#            """
-#st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+hide_streamlit_style = """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.image('./asset/logo.png')
 st.title("The 11th National Food Engineering Conference :red[_Febuary 13-14, 2025_]")
