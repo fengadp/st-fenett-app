@@ -1,5 +1,7 @@
 import os
+import pandas as pd
 import streamlit as st
+import plotly.express as px
 from streamlit_pdf_viewer import pdf_viewer
 # for python 3.10 correct [from typing_extensions import TypedDict, List, NotRequired] line 3 in st_env/Lib/site-packages/streamlit_carousel/__init__.py
 #from streamlit_carousel import carousel
@@ -109,8 +111,8 @@ if opt is not None:
 st.divider()
 
 st.header(':blue[บทความประชุมวิชาการฉบับสมบูรณ์]')
-page_number = st.number_input(label='', min_value=1, label_visibility="collapsed", key='input_page_number')
 with st.container(border=True):
+    page_number = st.number_input(label='', min_value=1, label_visibility="collapsed", key='input_page_number')
     pdf_viewer('./documents/บทความประชุมวิชาการฉบับสมบูรณ์.pdf', pages_to_render=[page_number])
 
 st.header(':blue[บรรยากาศงานประชุมวิชาการวิศวกรรมอาหารแห่งชาติ ครั้งที่ 6]')
@@ -136,15 +138,34 @@ with st.container(border=True):
 
 #st.divider()
 
-cols_2 = st.columns(2)
-cols_2[0].subheader('สอบถามข้อมูลเพิ่มเติม')
-cols_2[0].markdown("คุณวริศรา สมตน เจ้าหน้าที่ประสานงานประชุมวิชาการฯ")
-cols_2[0].markdown("ภาควิชาวิศวกรรมการอาหาร คณะวิศวกรรมศาสตร์ กำแพงแสน มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน")
-cols_2[0].markdown("1 หมู่ 6 ถ.มาลัยแมน ต.กำแพงแสน อ.กำแพงแสน จ.นครปฐม 73140")
-cols_2[0].markdown("โทรศัพท์: 082-2376747 E-mail: fengwaso@ku.ac.th")
-cols_2[0].image('./asset/QR_Web.svg', width=150, caption="https://fenett-2025.streamlit.app")
+def display_map(location_data):
+    fig = px.scatter_mapbox(location_data, lat='latitude', lon='longitude', hover_name='location', zoom=10)
+    fig.update_layout(mapbox_style='open-street-map')
+    return fig
 
-cols_2[1].subheader('การจองห้องพัก')
+cols_2 = st.columns(2)
+cols_2[0].subheader('การจองห้องพัก')
+cols_2[0].markdown('หอพักนานาชาติ (ภายในมหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน)')
+cols_2[0].markdown('โทรศัพท์: 034-355585-92')
+cols_2[0].markdown('แสนปาล์ม เทรนนิ่ง โฮม (ภายนอกมหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน)')
+cols_2[0].markdown('โทรศัพท์: 034-355166, 092-2495861, 081-9428548')
+
+# Create the pandas DataFrame for map locations
+data = {'location': ['หอพักนานาชาติ', 'แสนปาล์ม เทรนนิ่ง โฮม'],
+        'latitude': [14.01695, 14.00751],
+        'longitude': [99.98081, 99.96967]}
+        #'mark_size': [5, 5, 5]}
+        #'mark_color': ['rgb(255, 0, 0)', 'rgb(0, 0, 255)', 'rgb(0, 255, 0)']}
+df = pd.DataFrame(data)
+px_map = display_map(df)
+cols_2[0].plotly_chart(px_map, use_container_width=True)
+
+cols_2[1].subheader('สอบถามข้อมูลเพิ่มเติม')
+cols_2[1].markdown("คุณวริศรา สมตน เจ้าหน้าที่ประสานงานประชุมวิชาการฯ")
+cols_2[1].markdown("ภาควิชาวิศวกรรมการอาหาร คณะวิศวกรรมศาสตร์ กำแพงแสน มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน")
+cols_2[1].markdown("1 หมู่ 6 ถ.มาลัยแมน ต.กำแพงแสน อ.กำแพงแสน จ.นครปฐม 73140")
+cols_2[1].markdown("โทรศัพท์: 082-2376747 E-mail: fengwaso@ku.ac.th")
+cols_2[1].image('./asset/QR_Web.svg', width=150, caption="https://fenett-2025.streamlit.app")
 
 st.write('')
 st.subheader('ผู้สนับสนุนการประชุมวิชาการ')
