@@ -146,9 +146,9 @@ def display_map(location_data):
 cols_2 = st.columns(2)
 cols_2[0].subheader('การจองห้องพัก')
 cols_2[0].markdown('หอพักนานาชาติ (ภายในมหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน)')
-cols_2[0].markdown(':red[โทรศัพท์: 034-355585-92]')
+cols_2[0].markdown(':blue[โทรศัพท์: 034-355585-92]')
 cols_2[0].markdown('แสนปาล์ม เทรนนิ่ง โฮม (ภายนอกมหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตกำแพงแสน)')
-cols_2[0].markdown(':red[โทรศัพท์: 034-355166, 092-2495861, 081-9428548]')
+cols_2[0].markdown(':blue[โทรศัพท์: 034-355166, 092-2495861, 081-9428548]')
 
 # Create the pandas DataFrame for map locations
 data = {'location': ['หอพักนานาชาติ', 'แสนปาล์ม เทรนนิ่ง โฮม'],
