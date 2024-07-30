@@ -65,16 +65,16 @@ st.markdown(":frog: ผู้นำเสนอโครงงานระดั
 st.markdown(":tiger: อาจารย์และบุคคลทั่วไปเข้าร่วมประชุม 1000 บาท")
 st.markdown(":dog: นักศึกษาเข้าร่วมประชุม 200 บาท")
 st.markdown("ชำระเงินค่าลงทะเบียนโดยการโอนเงินเข้าบัญชีธนาคารไทยพาณิชย์ จำกัด (มหาชน) สาขากำแพงแสน (มหาวิทยาลัยเกษตรศาสตร์) ชื่อบัญชี สุกัญญา วิชชุกิจ และ วันวิสาข์ ใจตรง เลขที่ 769-280259-3")
-link = '[Click เพื่อลงทะเบียน](' + st.secrets.google.form1 + ')'
-st.markdown(link, unsafe_allow_html=True)
+#link = '[Click เพื่อลงทะเบียน](' + st.secrets.google.form1 + ')'
+#st.markdown(link, unsafe_allow_html=True)
 st.image('./asset/QR_Form1.svg', width=150, caption="Scan เพื่อลงทะเบียน")
 
 st.header(':blue[ส่งบทความ]')
 st.markdown("กำหนดส่งบทความฉบับเต็มภายใน :rainbow[วันที่ 7 กุมภาพันธ์ 2568]")
 st.markdown("การตอบรับบทความฉบับเต็มภายใน :rainbow[วันที่ 10 กุมภาพันธ์ 2568]")
 
-link = '[Click เพื่อส่งบทคัดย่อ/บทความฉบับเต็ม/ไฟล์นำเสนอภาคบรรยาย กรุณาส่งทีละไฟล์](' + st.secrets.google.form2 + ')'
-st.markdown(link, unsafe_allow_html=True)
+#link = '[Click เพื่อส่งบทคัดย่อ/บทความฉบับเต็ม/ไฟล์นำเสนอภาคบรรยาย กรุณาส่งทีละไฟล์](' + st.secrets.google.form2 + ')'
+#st.markdown(link, unsafe_allow_html=True)
 st.image('./asset/QR_Form2.svg', width=150, caption="Scan เพื่อส่งบทความ")
 
 #st.header(':blue[การประเมินบทความทางวิชาการ]')
