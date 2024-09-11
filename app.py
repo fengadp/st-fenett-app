@@ -81,7 +81,7 @@ tabs[0].write('')
 tabs[0].subheader('ผู้สนับสนุนการประชุมวิชาการ')
 cols_3 = tabs[0].columns(2)
 #cols_3[0].image('./asset/support1.jpg')
-cols_3[1].image('./asset/support2.jpg')
+cols_3[0].image('./asset/support2.jpg')
 
 #tabs[0].divider()
 
