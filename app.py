@@ -116,8 +116,8 @@ tabs[1].markdown(link, unsafe_allow_html=True)
 tabs[1].image('./asset/QR_Form1.svg', width=150, caption="Scan เพื่อลงทะเบียน")
 
 tabs[2].header(':blue[ส่งบทความ]')
-tabs[2].markdown("เปิดรับบทคัดย่อ/บทความฉบับเต็ม :rainbow[วันที่ 1 ตุลาคม - 6 ธันวาคม 2567]")
-tabs[2].markdown("แจ้งผลพิจารณาบทความ :rainbow[วันที่ 9 มกราคม 2568]")
+tabs[2].markdown("เปิดรับบทคัดย่อ/บทความฉบับเต็ม :rainbow[ภายในวันที่ 6 มกราคม 2568]")
+tabs[2].markdown("แจ้งผลพิจารณาบทความ :rainbow[วันที่ 16 มกราคม 2568]")
 
 link = '[Click เพื่อส่งบทคัดย่อ/บทความฉบับเต็ม/ไฟล์นำเสนอภาคบรรยาย กรุณาส่งทีละไฟล์](' + st.secrets.google.form2 + ')'
 tabs[2].markdown(link, unsafe_allow_html=True)
