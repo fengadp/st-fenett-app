@@ -82,13 +82,13 @@ cols_2[1].image('./asset/QR_Web.svg', width=150, caption="https://fenett-2025.st
 tabs[0].write('')
 tabs[0].subheader('ผู้สนับสนุนการประชุมวิชาการ')
 cols_3 = tabs[0].columns(3)
-cols_3[0].image('./asset/S1.png')
+cols_3[0].image('./asset/S4.JPG')
 cols_3[1].image('./asset/S2.jpg')
 cols_3[2].image('./asset/S5.png')
 
 cols_4 = tabs[0].columns(3)
 cols_4[0].image('./asset/S3.jpg')
-cols_4[1].image('./asset/S4.JPG')
+cols_4[1].image('./asset/S1.png')
 
 #tabs[0].divider()
 
