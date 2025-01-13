@@ -86,7 +86,7 @@ cols_3[0].image('./asset/S1.png')
 cols_3[1].image('./asset/S2.jpg')
 cols_3[2].image('./asset/S3.jpg')
 
-cols_4 = tabs[0].columns(2)
+cols_4 = tabs[0].columns(3)
 cols_4[0].image('./asset/S4.jpg')
 cols_4[1].image('./asset/S5.png')
 
