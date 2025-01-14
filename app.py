@@ -120,8 +120,10 @@ link = '[Click เพื่อลงทะเบียน](' + st.secrets.google
 tabs[1].markdown(link, unsafe_allow_html=True)
 tabs[1].image('./asset/QR_Form1.svg', width=150, caption="Scan เพื่อลงทะเบียน")
 
+tabs[1].header(':blue[ลงทะเบียนเพื่อเข้าร่วมกิจกรรมนวัตกรรมวิศวกรรมอาหารเชิงสร้างสรรค์]')
 link = '[Click เพื่อสถาบันลงทะเบียนแจ้งทีมแข่งขันนวัตกรรมวิศวกรรมอาหารเชิงสร้างสรรค์ (หมดเขต วันศุกร์  17 มค 68)](' + st.secrets.google.form3 + ')'
 tabs[1].markdown(link, unsafe_allow_html=True)
+tabs[1].image('./asset/QR_Form1.svg', width=150, caption="Scan เพื่อลงทะเบียน")
 
 tabs[2].header(':blue[ส่งบทความ]')
 tabs[2].markdown("เปิดรับบทคัดย่อ/บทความฉบับเต็ม :rainbow[ภายในวันที่ 6 มกราคม 2568]")
