@@ -121,7 +121,7 @@ tabs[1].markdown(link, unsafe_allow_html=True)
 tabs[1].image('./asset/QR_Form1.svg', width=150, caption="Scan เพื่อลงทะเบียน")
 
 tabs[1].header(':red[สถาบันลงทะเบียนเพื่อแจ้งทีมเข้าร่วมกิจกรรมแข่งขันนวัตกรรมวิศวกรรมอาหารเชิงสร้างสรรค์]')
-link = '[Click เพื่อลงทะเบียน(หมดเขต วันศุกร์ที่ 17 มกราคม 2568)](' + st.secrets.google.form3 + ')'
+link = '[Click เพื่อลงทะเบียน (หมดเขต วันศุกร์ที่ 17 มกราคม 2568)](' + st.secrets.google.form3 + ')'
 tabs[1].markdown(link, unsafe_allow_html=True)
 tabs[1].image('./asset/QR_Form3.png', width=150, caption="Scan เพื่อลงทะเบียน")
 
