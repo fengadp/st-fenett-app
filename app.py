@@ -90,9 +90,9 @@ cols_4 = tabs[0].columns(3)
 #cols_4[0].markdown("[![Charpa Tech]('./asset/S1.png')](https://charpa.co.th)")
 cols_4[0].markdown(
     """<a href="https://charpa.co.th/">
-    <img src="data:image/png;base64,{}" width="25">
+    <img src="data:asset/png;base64,{}" width="25">
     </a>""".format(
-        base64.b64encode(open("./asset/S1.png", "rb").read()).decode()
+        base64.b64encode(open("S1.png", "rb").read()).decode()
     ),
     unsafe_allow_html=True,
 )
