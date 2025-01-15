@@ -87,15 +87,8 @@ cols_3[1].image('./asset/S2.jpg')
 cols_3[2].image('./asset/S5.png')
 
 cols_4 = tabs[0].columns(3)
-#cols_4.markdown("[![Foo]('/.asset/S1.png')](https://charpa.co.th)")
-cols_4.markdown(
-    """<a href="https://www.linkedin.com/in/your-profile-username/">
-    <img src="data:image/png;base64,{}" width="25">
-    </a>""".format(
-        base64.b64encode(open("LinkedIn.png", "rb").read()).decode()
-    ),
-    unsafe_allow_html=True,
-)
+cols_4[0].markdown("[![Foo]('/.asset/S1.png')](https://charpa.co.th)")
+
 #cols_4[0].image('./asset/S1.png')
 cols_4[1].image('./asset/S3.jpg')
 
