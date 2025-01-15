@@ -90,7 +90,7 @@ cols_4 = tabs[0].columns(3)
 cols_4[0].markdown("('/.asset/S1.png')(https://charpa.co.th)")
 
 #cols_4[0].image('./asset/S1.png')
-cols_4[1].image('./asset/S3.jpg')
+cols_4[1].image("('./asset/S3.jpg')(https://charpa.co.th)")
 
 #tabs[0].divider()
 
