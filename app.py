@@ -87,15 +87,15 @@ cols_3[1].image('./asset/S2.jpg')
 cols_3[2].image('./asset/S5.png')
 
 cols_4 = tabs[0].columns(3)
-#cols_4[0].markdown("[![Charpa Tech]('./asset/S1.png')](https://charpa.co.th)")
-cols_4[0].markdown(
-    """<a href="https://charpa.co.th/">
-    <img src="data:asset/png;base64,{}" width="25">
-    </a>""".format(
-        base64.b64encode(open("S1.png", "rb").read()).decode()
-    ),
-    unsafe_allow_html=True,
-)
+cols_4[0].markdown("[![Charpa Tech](http://www.google.com.au/images/nav_logo7.png)](https://charpa.co.th)")
+#cols_4[0].markdown(
+#    """<a href="https://charpa.co.th/">
+#    <img src="data:asset/png;base64,{}" width="25">
+#    </a>""".format(
+#        base64.b64encode(open("S1.png", "rb").read()).decode()
+#    ),
+#    unsafe_allow_html=True,
+#)
 #cols_4[0].image('./asset/S1.png')
 cols_4[1].image('./asset/S3.jpg')
 
