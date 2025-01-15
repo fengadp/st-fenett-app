@@ -92,7 +92,7 @@ cols_4[0].markdown(
     """<a href="https://charpa.co.th/">
     <img src="data:image/png;base64,{}" width="25">
     </a>""".format(
-        base64.b64encode(open("./assest/S1.png", "rb").read()).decode()
+        base64.b64encode(open("./asset/S1.png", "rb").read()).decode()
     ),
     unsafe_allow_html=True,
 )
