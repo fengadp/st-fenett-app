@@ -89,10 +89,10 @@ cols_3[2].image('./asset/S5.png')
 cols_4 = tabs[0].columns(3)
 #cols_4[0].markdown("[![Charpa Tech]('./asset/S1.png')](https://charpa.co.th)")
 cols_4[0].markdown(
-    """<a href="https://www.linkedin.com/in/your-profile-username/">
+    """<a href="https://charpa.co.th/">
     <img src="data:image/png;base64,{}" width="25">
     </a>""".format(
-        base64.b64encode(open("LinkedIn.png", "rb").read()).decode()
+        base64.b64encode(open("./assest/S1.png", "rb").read()).decode()
     ),
     unsafe_allow_html=True,
 )
