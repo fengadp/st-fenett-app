@@ -94,12 +94,12 @@ cols_4 = tabs[0].columns(3)
 cols_4[0].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S1.png?raw=true)](https://charpa.co.th)")
 #cols_4[1].image('./asset/S3.jpg')
 cols_4[1].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S3.jpg?raw=true)](https://www.dutchmill.co.th)")
-#cols_4[2].image('./asset/S6.jpg')
-cols_4[2].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S6.jpg?raw=true)](http://www.upoic.co.th)")
+#cols_4[2].image('./asset/S7.png')
+cols_4[2].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S7.png?raw=true)](https://www.scispec.co.th)")
 
 cols_5 = tabs[0].columns(3)
-#cols_5[0].image('./asset/S7.png')
-cols_5[0].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S7.png?raw=true)](https://www.scispec.co.th)")
+#cols_5[0].image('./asset/S6.jpg')
+cols_5[0].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S6.jpg?raw=true)](http://www.upoic.co.th)")
 
 #tabs[0].divider()
 
