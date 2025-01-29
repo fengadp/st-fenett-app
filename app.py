@@ -41,6 +41,11 @@ with tabs[0].container(border=True):
     page_number = st.number_input(label='', min_value=1, max_value=2, label_visibility="collapsed", key='input_page_number')
     pdf_viewer('./documents/กำหนดการประชุมวิชาการวิศวกรรมอาหารแห่งชาติ ครั้งที่ 11.pdf', pages_to_render=[page_number])
 
+tabs[0].header(':blue[กำหนดการนำเสนอผลงานทางวิชาการ]')
+with tabs[0].container(border=True):
+    page_number_2 = st.number_input(label='', min_value=1, max_value=5, label_visibility="collapsed", key='input_page_number_2')
+    pdf_viewer('./documents/กำหนดการนำเสนอผลงานทางวิชาการ.pdf', pages_to_render=[page_number_2])
+
 #options = ['page 1', 'page 2', 'page 3']
 #opt = st.selectbox("", options, label_visibility="collapsed", key='select_info')
 #selected_index = options.index(opt)
