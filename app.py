@@ -105,8 +105,8 @@ cols_4[2].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asse
 cols_5 = tabs[0].columns(3)
 #cols_5[0].image('./asset/S6.jpg')
 cols_5[0].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S6.jpg?raw=true)](http://www.upoic.co.th)")
-cols_5[1].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S8.jpg?raw=true)](http://www.upoic.co.th)")
-cols_5[2].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S9.jpg?raw=true)](http://www.upoic.co.th)")
+cols_5[1].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S8.png?raw=true)](https://hylifeglobalfood.co.th)")
+cols_5[2].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S9.jpg?raw=true)](https://ampolfood.com)")
 
 #tabs[0].divider()
 
