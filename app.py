@@ -95,18 +95,17 @@ cols_3[1].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asse
 cols_3[2].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S5.png?raw=true)](http://www.thaiplc.com/)")
 
 cols_4 = tabs[0].columns(3)
-#cols_4[0].image('./asset/S1.png')
 cols_4[0].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S1.png?raw=true)](https://charpa.co.th)")
-#cols_4[1].image('./asset/S7.png')
 cols_4[1].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S7.png?raw=true)](https://www.scispec.co.th)")
-#cols_4[2].image('./asset/S2.jpg')
 cols_4[2].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S2.jpg?raw=true)](https://www.uandvholding.co.th/)")
 
 cols_5 = tabs[0].columns(3)
-#cols_5[0].image('./asset/S6.jpg')
 cols_5[0].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S6.jpg?raw=true)](http://www.upoic.co.th)")
 cols_5[1].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S8.png?raw=true)](https://hylifeglobalfood.co.th)")
 cols_5[2].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S9.jpg?raw=true)](https://ampolfood.com)")
+
+cols_6 = tabs[0].columns(3)
+cols_6[0].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S10.jpg?raw=true)](https://www.sritranggroup.com/th/home)")
 
 #tabs[0].divider()
 
