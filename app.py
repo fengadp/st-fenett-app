@@ -39,7 +39,7 @@ tabs[0].markdown(":balloon: Related Topics in Food and Engineering Technology")
 tabs[0].header(':blue[กำหนดการประชุมวิชาการ]')
 with tabs[0].container(border=True):
     page_number = st.number_input(label='', min_value=1, max_value=2, label_visibility="collapsed", key='input_page_number')
-    pdf_viewer('./documents/กำหนดการประชุมวิชาการวิศวกรรมอาหารแห่งชาติ ครั้งที่ 11.pdf', pages_to_render=[page_number])
+    pdf_viewer('./documents/กำหนดการประชุมวิชาการวิศวกรรมอาหารแห่งชาติ.pdf', pages_to_render=[page_number])
 
 tabs[0].header(':blue[กำหนดการนำเสนอผลงานทางวิชาการ]')
 with tabs[0].container(border=True):
