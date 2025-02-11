@@ -105,6 +105,7 @@ cols_5[1].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asse
 cols_5[2].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S9.jpg?raw=true)](https://ampolfood.com)")
 
 cols_6 = tabs[0].columns(3)
+cols_6[0].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S11.jpg?raw=true)](https://www.mama.co.th/)")
 cols_6[1].markdown("[![](https://github.com/fengadp/st-fenett-app/blob/main/asset/S10.jpg?raw=true)](https://www.sritranggroup.com/th/home)")
 
 #tabs[0].divider()
